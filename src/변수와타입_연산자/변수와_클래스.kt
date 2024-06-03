@@ -1,7 +1,5 @@
 package 변수와타입_연산자
 
-
-
 fun main() {
     var a = 12 //var은 변경 가능, 타입은 값에 의해서 추론이 된다. 타입추론이라고 함
     val b = 15 //val은 변경 불가능 final 역할

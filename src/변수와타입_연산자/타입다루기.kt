@@ -31,9 +31,33 @@ fun printAgeIfPerson(obj: Any?) {
     }
 }
 
+fun printAgeIfPerson2(obj: Any?) {
+    var person = obj as? Person //as뒤에 ?의 의미는 obj가 Person이면 Person객체를 반환하고, 그게 아니면 null을 반환한다.
+    println(person?.name) //person뒤에 ?의 의미도 person객체가 null이면 null을 반환하고 그게 아니면 person.name을 실행한다.
+}
+
 fun main() {
     var person = Person("현수", true)
     printAgeIfPerson(person)
     printAgeIfPerson("현수")
+
+    var person2 = Person("토르", true)
+    printAgeIfPerson2(null)
+    printAgeIfPerson2(person2)
+
+    //여러줄의 문자열 입력
+    var name = "kira"
+    var str =
+    """
+        ABC
+        DEF
+        ${name}
+    """.trimIndent()
+    println(str)
+
+    //특정 문자열 가져오기
+    val str2 = "ABC"
+    println(str2[0])
+    println(str2[2])
 }
 
