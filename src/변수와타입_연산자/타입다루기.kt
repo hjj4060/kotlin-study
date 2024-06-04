@@ -21,7 +21,7 @@ private class Person(
 fun printAgeIfPerson(obj: Any?) {
     if (obj is Person) {
         //var person = obj as Person //as Person은 Java의 (Person) obj
-        //is로 타입 검사를 했기때문에 자동으로 Person으로 캐스팅해준다 이것을 스마트 캐스팅이라고 한다.
+        //is로 타입 검사를 했기때문에 자동으로 Person으로 캐스팅해준다 이것을 스마트 캐스팅이라고 한다., 명시적 타입캐스팅은 as로 한다.
         println(obj.name)
     }
 
