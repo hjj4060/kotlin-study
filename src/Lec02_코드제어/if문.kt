@@ -1,6 +1,4 @@
-package 코드제어
-
-import java.beans.Expression
+package Lec02_코드제어
 
 /**
  * 자바에서는 if문은 Statement지만 코틀린에서는 Expression이다.
@@ -8,9 +6,11 @@ import java.beans.Expression
  *
  * Expression: 하나의 값으로 도출되는 문장
  */
+
 fun validateScoreIsNotNegative(score: Int) {
-    if (score < 0) {
-        throw IllegalArgumentException("${score}는 0보다 작을 수 없습니다.")
+    //자바에서 범위 0<= score && score <= 100 을 코틀린에서는 in 0..100 을 이용하여 간단하게 범위 조건을 설정할 수 있다.
+    if (score !in 0..100) {
+        throw IllegalArgumentException("${score}범위는 0부터 100입니다.")
     }
 }
 

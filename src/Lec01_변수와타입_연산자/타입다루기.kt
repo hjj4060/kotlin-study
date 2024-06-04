@@ -1,4 +1,4 @@
-package 변수와타입_연산자
+package Lec01_변수와타입_연산자
 
 //코틀린은 암시적 변환이 안된다.
 val number1: Int = 0

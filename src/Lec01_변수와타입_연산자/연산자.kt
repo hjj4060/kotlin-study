@@ -1,4 +1,4 @@
-package 변수와타입_연산자
+package Lec01_변수와타입_연산자
 
 fun main() {
     class JavaMoney(val amount: Long): Comparable<JavaMoney> {

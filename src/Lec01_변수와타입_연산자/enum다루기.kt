@@ -1,4 +1,4 @@
-package 변수와타입_연산자
+package Lec01_변수와타입_연산자
 
 //기본적인 enum
 //코틀린에서 enum은 소프트 키워드(soft keyword)라고 부른다.
