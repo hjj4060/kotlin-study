@@ -80,6 +80,4 @@ fun main() {
 
     //에러 발생
     val person2 = Person4("현수", -1)
-
-
 }
