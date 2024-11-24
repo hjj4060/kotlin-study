@@ -1,4 +1,4 @@
-package 코딩테스트.프로그래머스
+package 코딩테스트.프로그래머스.level1
 
 //https://school.programmers.co.kr/learn/courses/30/lessons/178871
 

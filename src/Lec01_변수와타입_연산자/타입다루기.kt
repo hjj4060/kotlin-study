@@ -48,7 +48,7 @@ fun main() {
     //여러줄의 문자열 입력
     var name = "kira"
     var str =
-    """
+        """
         ABC
         DEF
         ${name}
@@ -56,8 +56,9 @@ fun main() {
     println(str)
 
     //특정 문자열 가져오기
-    val str2 = "ABC"
+    val str2 = "ABC" + "12"
     println(str2[0])
     println(str2[2])
+    println(str2)
 }
 
