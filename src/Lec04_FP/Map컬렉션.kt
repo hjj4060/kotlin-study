@@ -11,6 +11,7 @@ fun main() {
         println(oldMap[key])
     }
 
+    //entries를 붙여도 되고 안붙여도 된다.
     for ((key, value) in oldMap.entries) {
         println(key)
         println(value)

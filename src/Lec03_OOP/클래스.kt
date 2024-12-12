@@ -18,8 +18,10 @@ class Person2(name: String, age: Int) {
 //바디에 아무것도 없으면 생략 가능하다.
 class Person3(
     val name: String,
-    var age: Int
+    var age: Int,
+    var isMarried: Boolean,
 )
+
 
 class Person4(
     val name: String,
@@ -39,6 +41,7 @@ class Person4(
 
     constructor() : this("강현수")
 }
+
 //코틀린에서 constructor보다는 디폴트 파라미터나, Converting과 같은 경우 부생성자가 필요할 때 정적 팩토리 메소드를 쓴다.
 //사실상 부생성자를 쓸일이 없다.
 class Person5(
@@ -57,7 +60,7 @@ class Person5(
     //body를 활용
     val isAdult3: Boolean
         get() {
-          return this.age >= 20
+            return this.age >= 20
         }
 
     //개인적인 의견으로 속성을 다룰땐 커스텀 getter, 나머지는 함수이용
@@ -74,10 +77,14 @@ class Person5(
 fun main() {
     //getter와 setter를 사용할때 . 필드를 이용한다.
     //자바 클래스에 대해서도 . 필드로 getter, setter를 사용한다.
-    val person = Person3("최태현", 100)
+    val person = Person3("강현수", 100, false)
     println(person.name) //getter 사용
     person.age = 10 //setter 사용
+    person.isMarried = true
 
     //에러 발생
-    val person2 = Person4("현수", -1)
+//    val person2 = Person4("현수", -1)
+
+    val person5 = Person5()
+    println(person5.isAdult2)
 }

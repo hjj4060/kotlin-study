@@ -15,7 +15,7 @@ fun validateScoreIsNotNegative(score: Int) {
 }
 
 fun getPassOrFail(score: Int): String {
-    if(score < 0) {
+    if (score < 0) {
         return "P"
     } else {
         return "F"
@@ -42,9 +42,11 @@ class Sum(val left: Expr, val right: Expr) : Expr
 
 fun eval(e: Expr): Int {
     if (e is Num) {
+        println("num ${e.value}")
         return e.value
     }
     if (e is Sum) {
+        println("sum ${e.left} ${e.right}")
         return eval(e.left) + eval(e.right)
     }
     throw IllegalArgumentException("Unknown expression")
